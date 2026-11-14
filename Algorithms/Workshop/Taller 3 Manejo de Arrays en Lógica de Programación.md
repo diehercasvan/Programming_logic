@@ -107,13 +107,16 @@ Algoritmo Ejemplo_Vector
 	Dimension  numeros(5);
 	//Inicio
     // Llenar el vector
-    Para i<- 1 Hasta 5 Con Paso 1 Hacer        Escribir  "Digite el número ", i, ":";
+    Para i<- 1 Hasta 5 Con Paso 1 Hacer      
+    Escribir  "Digite el número ", i, ":";
         Leer  numeros(i);
-	FinPara		Escribir "Los números ingresados son:";
+	FinPara	
+    Escribir "Los números ingresados son:";
 		// Mostrar el vector
 		Para i <- 1 Hasta 5 Con Paso 1 Hacer
 			Escribir numeros(i);
-		FinPara	Fin Algoritmo
+		FinPara
+    Fin Algoritmo
 ```
 
 **Explicación:**
