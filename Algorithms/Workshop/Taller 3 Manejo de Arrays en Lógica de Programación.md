@@ -1,4 +1,3 @@
-
 # 📝 Taller: Manejo de Arrays en Lógica de Programación
 
 **Asignatura:** Lógica de Programación
@@ -99,6 +98,24 @@ Inicio
 Fin
 ```
 
+**PSeInt:**
+
+```
+Algoritmo Ejemplo_Vector
+	//Variables
+	Definir  numeros,i Como Entero;
+	Dimension  numeros(5);
+	//Inicio
+    // Llenar el vector
+    Para i<- 1 Hasta 5 Con Paso 1 Hacer        Escribir  "Digite el número ", i, ":";
+        Leer  numeros(i);
+	FinPara		Escribir "Los números ingresados son:";
+		// Mostrar el vector
+		Para i <- 1 Hasta 5 Con Paso 1 Hacer
+			Escribir numeros(i);
+		FinPara	Fin Algoritmo
+```
+
 **Explicación:**
 
 - Se declara un vector `numeros` de 5 posiciones y una variable `i` como índice.
@@ -151,6 +168,26 @@ Inicio
 Fin
 ```
 
+**PSeInt:**
+
+```
+Algoritmo Promedio_Vector
+	///Variables
+	Definir notas, suma, promedio,i Como Entero;
+	Dimension  notas(5);	//Inicio
+    suma <- 0;    // Llenar el vector
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Escribir  "Digite la nota ", i, ":";
+        Leer notas(i)
+        suma <-suma + notas(i)
+	FinPara		// Calcular promedio
+		promedio <- suma / 5;		// Mostrar resultados
+		Escribir  "La suma de las notas es: ", suma;
+		Escribir  "El promedio es: ", promedio;
+	Fin Algoritmo
+```
+
+
 **Explicación:**
 
 - Se declara un vector `notas` de 5 reales, y variables `suma` y `promedio`.
@@ -185,6 +222,25 @@ Inicio
     Escriba "El número mayor es: ", mayor
 Fin
 ```
+
+**PSeInt:**
+
+```
+Algoritmo Mayor_Vector
+	//Variables
+Definir numeros,i,mayor Como Entero;
+Dimension  numeros(5);
+	//Inicio
+    // Llenar el vector
+Para i <- 1 Hasta 5 Con Paso  1 Hacer        Escribir  "Digite el número ", i, ":";
+        Leer numeros(i);	FinPara		// Buscar el mayor
+		mayor <- numeros(1);  // Se asume que el primero es el mayor
+		Para i <- 2 Hasta 5 Con Paso 1 Hacer
+			SI numeros(i) > mayor  Entonces				mayor <- numeros(i);
+			FinSi		FinPara		Escribir "El número mayor es: ", mayor;
+FinAlgoritmo
+```
+
 
 **Explicación:**
 
@@ -353,7 +409,7 @@ El estudiante debe entregar un documento (Word, PDF o Markdown) con:
 
 ---
 
-## 📊 Rúbrica de Evaluación (Sugerida)
+## 📊 Rúbrica de Evaluación
 
 | Criterio                            | Excelente (5)                                                                                       | Bueno (4)                                       | Regular (3)                                               | Insuficiente (2)                     |
 | :---------------------------------- | :-------------------------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------------------------------- | :----------------------------------- |
