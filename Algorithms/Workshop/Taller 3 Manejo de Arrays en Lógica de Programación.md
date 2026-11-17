@@ -108,15 +108,15 @@ Algoritmo Ejemplo_Vector
 	//Inicio
     // Llenar el vector
     Para i<- 1 Hasta 5 Con Paso 1 Hacer      
-    Escribir  "Digite el número ", i, ":";
+		Escribir  "Digite el número ", i, ":";
         Leer  numeros(i);
 	FinPara	
     Escribir "Los números ingresados son:";
-		// Mostrar el vector
-		Para i <- 1 Hasta 5 Con Paso 1 Hacer
-			Escribir numeros(i);
-		FinPara
-    Fin Algoritmo
+	// Mostrar el vector
+	Para i <- 1 Hasta 5 Con Paso 1 Hacer
+		Escribir numeros(i);
+	FinPara
+Fin Algoritmo
 ```
 
 **Explicación:**
